@@ -1,3 +1,5 @@
 ## network folder
 1-network/.terraform
 1-network/.terraform.lock.hcl
+1-network/terraform.tfstate
+1-network/terraform.tfstate.backup
