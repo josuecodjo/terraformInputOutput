@@ -1,11 +1,17 @@
-variable "nginx_container_name" {
+variable "zabbix_network" {
   type        = string
-  description = "name of the container"
-  default     = "nginx"
+  description = "name of the network"
+  default     = "zabbix"
 }
 
-variable "nginx_exposed_port" {
-  type        = number
-  description = "exposed port of the nginx container"
-  default     = 30100
+variable "zabbix_sub" {
+  type        = string
+  description = "subnet"
+  default     = "172.20.0.0/16"
+}
+
+variable "zabbix_range" {
+  type        = string
+  description = "ip range"
+  default     = "172.20.240.0/20"
 }
